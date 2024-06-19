@@ -9,7 +9,8 @@
     "lint": "pnpm @biomejs/biome lint --write ./src",
     "check": "pnpm @biomejs/biome check --write ./src",
     "setup:web": "pnpm tsx scripts/setupForWeb.mts",
-    "postinstall":"lefthook install"
+    "postinstall": "lefthook install",
+    "dev":"pnpm vite"
   },
   "keywords": [],
   "author": "",
@@ -22,5 +23,8 @@
     "vitest": "^1.6.0",
     "zx": "^8.1.2"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "vite": "^5.3.1"
+  }
 }
